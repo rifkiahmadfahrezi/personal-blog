@@ -32,6 +32,13 @@
       "fieldType": "Image",
       "dataType": "image",
       "title": "thumbnail"
+    },
+    "demoUrl": {
+      "description": "Demo url to your project",
+      "required": false,
+      "fieldType": "Text",
+      "dataType": "string",
+      "title": "demo url"
     }
   }
 }
