@@ -9,6 +9,13 @@
       "dataType": "array",
       "title": "category",
       "values": []
+    },
+    "description": {
+      "description": "Work's description",
+      "required": false,
+      "fieldType": "Text",
+      "dataType": "string",
+      "title": "description"
     }
   }
 }
