@@ -1,3 +1,4 @@
+import "../globals.css"
 import { Navbar } from "@/components/navbar"
 
 const BaseLayout = ({ children }: { children: React.ReactNode }) => {
