@@ -29,10 +29,7 @@ export const BlogList = async ({
     : await query.toArray()
 
   return (
-    <div
-      className={cn("grid grid-cols-1 md:grid-cols-2 gap-5", className)}
-      {...props}
-    >
+    <div className={cn("grid grid-cols-1 gap-5", className)} {...props}>
       {blogs.map((blog: Blog) => (
         <div key={blog.slug} className="space-y-3">
           <h3 className="font-semibold text-xl md:text-2xl text-primary">
