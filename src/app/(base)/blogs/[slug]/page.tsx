@@ -31,7 +31,9 @@ export default async function Page(props: {
           <p>{page.data.author.name}</p>
         </div>
       </Card>
-      {page.data.toc.length !== 0 && <InlineTOC items={page.data.toc} />}
+      {page.data.toc.length !== 0 && (
+        <InlineTOC className="my-3" items={page.data.toc} />
+      )}
       <article className="container flex flex-col px-4 py-8">
         <div className="prose min-w-0">
           <Mdx components={defaultMdxComponents} />

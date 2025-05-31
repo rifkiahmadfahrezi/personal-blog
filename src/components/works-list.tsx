@@ -2,6 +2,9 @@ import { cn } from "@/lib/utils"
 import { load } from "outstatic/server"
 import { Calendar } from "lucide-react"
 import Link from "next/link"
+import { Card } from "./ui/card"
+import { Badge } from "./ui/badge"
+import Image from "next/image"
 
 export const revalidate = 30
 
@@ -10,6 +13,11 @@ type Work = {
   slug: string
   publishedAt: string
   description?: string
+  thumbnail?: string
+  category?: {
+    label: string
+    value: string
+  }[]
 }
 
 export const WorksList = async ({
@@ -22,7 +30,14 @@ export const WorksList = async ({
     .find({
       collection: "works",
     })
-    .project(["title", "slug", "publishedAt", "description"])
+    .project([
+      "title",
+      "slug",
+      "publishedAt",
+      "description",
+      "thumbnail",
+      "category",
+    ])
 
   const works = limit
     ? await query.limit(limit).toArray()
@@ -30,22 +45,45 @@ export const WorksList = async ({
 
   return (
     <div
-      className={cn("grid grid-cols-1 md:grid-cols-2 gap-5", className)}
+      className={cn(
+        "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5",
+        className,
+      )}
       {...props}
     >
       {works.map((work: Work) => (
-        <div key={work.slug} className="space-y-3">
-          <h3 className="font-semibold text-xl md:text-2xl text-primary">
+        <Card key={work.slug} className="space-y-3 p-2 gap-0">
+          {work.thumbnail && (
+            <figure className="aspect-video overflow-hidden rounded">
+              <Image
+                width={300}
+                height={170}
+                className="w-full"
+                src={work.thumbnail}
+                alt={work.title}
+              />
+            </figure>
+          )}
+          <h3 className="font-semibold text-xl text-primary">
             <Link href={`/works/${work.slug}`} className="hover:underline">
               {work.title}
             </Link>
           </h3>
+          <div className="flex flex-wrap mb-2">
+            {work.category?.map((cat) => (
+              <Badge variant={"primary"} key={cat.label}>
+                {cat.label}
+              </Badge>
+            ))}
+          </div>
           {work.description && <p>{work.description}</p>}
-          <p className="flex gap-2">
-            <Calendar className="size-5" />
-            <span>{new Date(work.publishedAt).toDateString()}</span>
+          <p className="flex gap-1">
+            <Calendar className="size-4" />
+            <span className="text-sm">
+              {new Date(work.publishedAt).toDateString()}
+            </span>
           </p>
-        </div>
+        </Card>
       ))}
     </div>
   )

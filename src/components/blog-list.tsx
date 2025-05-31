@@ -41,9 +41,11 @@ export const BlogList = async ({
             </Link>
           </h3>
           {blog.description && <p>{blog.description}</p>}
-          <p className="flex gap-2">
-            <Calendar className="size-5" />
-            <span>{new Date(blog.publishedAt).toDateString()}</span>
+          <p className="flex gap-1">
+            <Calendar className="size-4" />
+            <span className="text-sm">
+              {new Date(blog.publishedAt).toDateString()}
+            </span>
           </p>
         </div>
       ))}

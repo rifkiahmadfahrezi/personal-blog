@@ -7,6 +7,7 @@ import { works } from "@/lib/source"
 import { Card } from "@/components/ui/card"
 import { ArrowLeft } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Image from "next/image"
 
 export default async function Page(props: {
   params: Promise<{ slug: string }>
@@ -19,7 +20,17 @@ export default async function Page(props: {
 
   return (
     <>
-      <Card className="py-12 md:px-8 space-y-1 gap-0">
+      <div className="p-3 space-y-1">
+        <figure className="aspect-video rounded overflow-hidden mb-3">
+          <Image
+            className="w-full"
+            priority
+            width={750}
+            height={350}
+            alt={page.data.title}
+            src={page.data.thumbnail}
+          />
+        </figure>
         <h1 className="text-xl md:text-3xl font-bold">{page.data.title}</h1>
         <p className="mb-4 text-muted-foreground">{page.data.description}</p>
         <div className="flex items-center gap-3">
@@ -29,7 +40,10 @@ export default async function Page(props: {
           </Avatar>
           <p>{page.data.author.name}</p>
         </div>
-      </Card>
+      </div>
+      {page.data.toc.length !== 0 && (
+        <InlineTOC className="my-3" items={page.data.toc} />
+      )}
       <article className="container flex flex-col px-4 py-8">
         <div className="prose min-w-0">
           <Mdx components={defaultMdxComponents} />
