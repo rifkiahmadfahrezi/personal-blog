@@ -22,14 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+        <RootProvider
+          theme={{
+            defaultTheme: "light",
+            enableSystem: false,
+            enabled: false,
+          }}
         >
-          <RootProvider>{children}</RootProvider>
-        </ThemeProvider>
+          {children}
+        </RootProvider>
       </body>
     </html>
   )
