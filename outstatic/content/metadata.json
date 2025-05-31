@@ -1,6 +1,6 @@
 {
   "commit": "",
-  "generated": "Sat, 31 May 2025 01:48:43 GMT",
+  "generated": "Sat, 31 May 2025 01:51:02 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -13,6 +13,22 @@
         "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
       },
       "collection": "blogs",
+      "publishedAt": "2025-05-30T03:54:27.584Z",
+      "slug": "test-oustatic-cms",
+      "status": "published",
+      "title": "Test oustatic cms"
+    },
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "1341903023",
+        "path": "content/works/test-outstatic-cms.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "collection": "works",
       "publishedAt": "2025-05-30T03:54:27.584Z",
       "slug": "test-oustatic-cms",
       "status": "published",
