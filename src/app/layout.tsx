@@ -1,7 +1,7 @@
+import "./globals.css"
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 
-import { ThemeProvider } from "@/components/theme-provider"
 import { RootProvider } from "fumadocs-ui/provider"
 
 const geistSans = Geist({
