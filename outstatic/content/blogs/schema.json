@@ -31,6 +31,10 @@
         {
           "value": "uiDesign",
           "label": "UI Design"
+        },
+        {
+          "value": "toolsResources",
+          "label": "Tools & Resources"
         }
       ]
     }

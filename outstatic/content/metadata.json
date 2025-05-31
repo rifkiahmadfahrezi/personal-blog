@@ -1,6 +1,6 @@
 {
-  "commit": "3ce567f0466c8cc5a0706e2b27c135fe6f6f954f",
-  "generated": "2025-05-31T06:48:03.781Z",
+  "commit": "ae425984bd55db21d651049de16403ccaff5f120",
+  "generated": "2025-05-31T06:49:03.087Z",
   "metadata": [
     {
       "__outstatic": {
@@ -64,6 +64,29 @@
       "slug": "how-to-create-a-design-system-from-scratch",
       "status": "published",
       "title": "How to Create a Design System from Scratch"
+    },
+    {
+      "__outstatic": {
+        "commit": "ae425984bd55db21d651049de16403ccaff5f120",
+        "hash": "2310927599",
+        "path": "content/blogs/my-go-to-tools-for-wireframing-and-prototyping.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "Tools & Resources",
+          "value": "toolsResources"
+        }
+      ],
+      "collection": "blogs",
+      "description": "Explore my favorite tools for creating wireframes and interactive prototypes — plus tips on choosing the right tool for your workflow.",
+      "publishedAt": "2025-05-31T07:30:16.116Z",
+      "slug": "my-go-to-tools-for-wireframing-and-prototyping",
+      "status": "published",
+      "title": "My Go-To Tools for Wireframing and Prototyping"
     }
   ]
 }
