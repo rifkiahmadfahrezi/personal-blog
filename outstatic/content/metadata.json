@@ -1,6 +1,6 @@
 {
-  "commit": "c162424769e272b1bb02c66f4f084212672f839a",
-  "generated": "2025-05-31T03:37:21.018Z",
+  "commit": "5fd3e8695400febd5803de7e51a94007a6b620f9",
+  "generated": "2025-05-31T04:44:06.109Z",
   "metadata": [
     {
       "__outstatic": {
@@ -44,6 +44,30 @@
       "slug": "test-outstatic-cms",
       "status": "published",
       "title": "Test outstatic cms"
+    },
+    {
+      "__outstatic": {
+        "commit": "5fd3e8695400febd5803de7e51a94007a6b620f9",
+        "hash": "1051595466",
+        "path": "content/works/test-outstatic-cms.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "UI/UX",
+          "value": "uiUx"
+        }
+      ],
+      "collection": "works",
+      "description": "This is description",
+      "publishedAt": "2025-05-30T03:54:27.584Z",
+      "slug": "test-outstatic-cms",
+      "status": "published",
+      "thumbnail": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba",
+      "title": "Example works"
     }
   ]
 }
