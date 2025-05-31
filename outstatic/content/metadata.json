@@ -1,6 +1,6 @@
 {
-  "commit": "",
-  "generated": "Sat, 31 May 2025 01:51:02 GMT",
+  "commit": "c162424769e272b1bb02c66f4f084212672f839a",
+  "generated": "2025-05-31T03:37:21.018Z",
   "metadata": [
     {
       "__outstatic": {
@@ -33,6 +33,33 @@
       "slug": "test-oustatic-cms",
       "status": "published",
       "title": "Test oustatic cms"
+    },
+    {
+      "__outstatic": {
+        "commit": "c162424769e272b1bb02c66f4f084212672f839a",
+        "hash": "2658248076",
+        "path": "content/blogs/test-outstatic-cms.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "blog",
+          "value": "blog"
+        },
+        {
+          "label": "tips",
+          "value": "tips"
+        }
+      ],
+      "collection": "blogs",
+      "description": "This is description",
+      "publishedAt": "2025-05-30T03:54:27.584Z",
+      "slug": "test-outstatic-cms",
+      "status": "published",
+      "title": "Test outstatic cms"
     }
   ]
 }
