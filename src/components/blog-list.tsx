@@ -28,23 +28,21 @@ export const BlogList = async ({
     ? await query.limit(limit).toArray()
     : await query.toArray()
 
-  console.log(blogs)
   return (
-    <div
-      className={cn("grid grid-cols-1 md:grid-cols-2 gap-5", className)}
-      {...props}
-    >
+    <div className={cn("grid grid-cols-1 gap-5", className)} {...props}>
       {blogs.map((blog: Blog) => (
-        <div key={blog.slug} className="p-4 space-y-3">
+        <div key={blog.slug} className="space-y-3">
           <h3 className="font-semibold text-xl md:text-2xl text-primary">
             <Link href={`/blogs/${blog.slug}`} className="hover:underline">
               {blog.title}
             </Link>
           </h3>
           {blog.description && <p>{blog.description}</p>}
-          <p className="flex gap-2">
-            <Calendar className="size-5" />
-            <span>{new Date(blog.publishedAt).toDateString()}</span>
+          <p className="flex gap-1">
+            <Calendar className="size-4" />
+            <span className="text-sm">
+              {new Date(blog.publishedAt).toDateString()}
+            </span>
           </p>
         </div>
       ))}

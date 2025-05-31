@@ -1,8 +1,9 @@
-import "./globals.css"
+// import "./globals.css"
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 
 import { RootProvider } from "fumadocs-ui/provider"
+import { ProgressbarProvider } from "@/components/progressbar-provider"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,7 @@ export default function RootLayout({
             enabled: false,
           }}
         >
-          {children}
+          <ProgressbarProvider>{children}</ProgressbarProvider>
         </RootProvider>
       </body>
     </html>

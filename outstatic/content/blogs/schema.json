@@ -23,6 +23,18 @@
         {
           "value": "tips",
           "label": "tips"
+        },
+        {
+          "value": "uxDesign",
+          "label": "UX Design"
+        },
+        {
+          "value": "uiDesign",
+          "label": "UI Design"
+        },
+        {
+          "value": "toolsResources",
+          "label": "Tools & Resources"
         }
       ]
     }

@@ -16,7 +16,12 @@ export const blog = defineCollections({
     title: z.string(),
     slug: z.string(),
     description: z.string(),
-    category: z.array(z.string()),
+    category: z.array(
+      z.object({
+        value: z.string(),
+        label: z.string(),
+      }),
+    ),
     status: z.enum(["published", "draft"]),
     author: z.object({
       name: z.string(),
@@ -34,7 +39,13 @@ export const work = defineCollections({
     title: z.string(),
     slug: z.string(),
     description: z.string(),
-    category: z.array(z.string()),
+    thumbnail: z.string(),
+    category: z.array(
+      z.object({
+        value: z.string(),
+        label: z.string(),
+      }),
+    ),
     status: z.enum(["published", "draft"]),
     author: z.object({
       name: z.string(),

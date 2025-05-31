@@ -10,5 +10,11 @@
     "slug": "works",
     "path": "content/works",
     "children": []
+  },
+  {
+    "title": "Hero",
+    "slug": "hero",
+    "path": "outstatic/content/hero",
+    "children": []
   }
 ]
