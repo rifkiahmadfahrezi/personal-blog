@@ -40,6 +40,7 @@ export const work = defineCollections({
     slug: z.string(),
     description: z.string(),
     thumbnail: z.string(),
+    demoUrl: z.string(),
     category: z.array(
       z.object({
         value: z.string(),
