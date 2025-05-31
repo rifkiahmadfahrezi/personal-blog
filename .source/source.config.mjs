@@ -14,6 +14,8 @@ var blog = defineCollections({
   schema: frontmatterSchema.extend({
     title: z.string(),
     slug: z.string(),
+    description: z.string(),
+    category: z.array(z.string()),
     status: z.enum(["published", "draft"]),
     author: z.object({
       name: z.string(),
@@ -29,6 +31,8 @@ var work = defineCollections({
   schema: frontmatterSchema.extend({
     title: z.string(),
     slug: z.string(),
+    description: z.string(),
+    category: z.array(z.string()),
     status: z.enum(["published", "draft"]),
     author: z.object({
       name: z.string(),
