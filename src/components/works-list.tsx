@@ -5,14 +5,14 @@ import Link from "next/link"
 
 export const revalidate = 30
 
-type Blog = {
+type Work = {
   title: string
   slug: string
   publishedAt: string
   description?: string
 }
 
-export const BlogList = async ({
+export const WorksList = async ({
   className,
   limit,
   ...props
@@ -20,11 +20,11 @@ export const BlogList = async ({
   const db = await load()
   const query = db
     .find({
-      collection: "blogs",
+      collection: "works",
     })
     .project(["title", "slug", "publishedAt", "description"])
 
-  const blogs = limit
+  const works = limit
     ? await query.limit(limit).toArray()
     : await query.toArray()
 
@@ -33,17 +33,17 @@ export const BlogList = async ({
       className={cn("grid grid-cols-1 md:grid-cols-2 gap-5", className)}
       {...props}
     >
-      {blogs.map((blog: Blog) => (
-        <div key={blog.slug} className="space-y-3">
+      {works.map((work: Work) => (
+        <div key={work.slug} className="space-y-3">
           <h3 className="font-semibold text-xl md:text-2xl text-primary">
-            <Link href={`/blogs/${blog.slug}`} className="hover:underline">
-              {blog.title}
+            <Link href={`/works/${work.slug}`} className="hover:underline">
+              {work.title}
             </Link>
           </h3>
-          {blog.description && <p>{blog.description}</p>}
+          {work.description && <p>{work.description}</p>}
           <p className="flex gap-2">
             <Calendar className="size-5" />
-            <span>{new Date(blog.publishedAt).toDateString()}</span>
+            <span>{new Date(work.publishedAt).toDateString()}</span>
           </p>
         </div>
       ))}
