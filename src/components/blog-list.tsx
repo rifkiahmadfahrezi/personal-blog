@@ -37,7 +37,11 @@ export const BlogList = async ({
               {blog.title}
             </Link>
           </h3>
-          {blog.description && <p>{blog.description}</p>}
+          {blog.description && (
+            <p className="line-clamp-4 text-muted-foreground">
+              {blog.description}
+            </p>
+          )}
           <p className="flex gap-1">
             <Calendar className="size-4" />
             <span className="text-sm">

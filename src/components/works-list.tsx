@@ -76,7 +76,11 @@ export const WorksList = async ({
               </Badge>
             ))}
           </div>
-          {work.description && <p>{work.description}</p>}
+          {work.description && (
+            <p className="line-clamp-4 text-muted-foreground">
+              {work.description}
+            </p>
+          )}
           <p className="flex gap-1">
             <Calendar className="size-4" />
             <span className="text-sm">
