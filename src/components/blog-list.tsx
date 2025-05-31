@@ -29,9 +29,15 @@ export const BlogList = async ({
     : await query.toArray()
 
   return (
-    <div className={cn("grid grid-cols-1 gap-5", className)} {...props}>
+    <div className={cn("grid grid-cols-1 gap-8", className)} {...props}>
       {blogs.map((blog: Blog) => (
         <div key={blog.slug} className="space-y-3">
+          <p className="flex gap-1 text-muted-foreground">
+            <Calendar className="size-4" />
+            <span className="text-sm">
+              {new Date(blog.publishedAt).toDateString()}
+            </span>
+          </p>
           <h3 className="font-semibold text-xl md:text-2xl text-primary">
             <Link href={`/blogs/${blog.slug}`} className="hover:underline">
               {blog.title}
@@ -42,12 +48,6 @@ export const BlogList = async ({
               {blog.description}
             </p>
           )}
-          <p className="flex gap-1">
-            <Calendar className="size-4" />
-            <span className="text-sm">
-              {new Date(blog.publishedAt).toDateString()}
-            </span>
-          </p>
         </div>
       ))}
     </div>
