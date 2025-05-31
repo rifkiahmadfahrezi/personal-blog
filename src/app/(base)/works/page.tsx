@@ -3,7 +3,7 @@ import { WorksList } from "@/components/works-list"
 const WorksPage = () => {
   return (
     <div>
-      <h2 className="text-2xl md:text-3xl my-3">My works</h2>
+      <h2 className="text-2xl md:text-3xl my-3 font-bold">My works</h2>
       <WorksList />
     </div>
   )
