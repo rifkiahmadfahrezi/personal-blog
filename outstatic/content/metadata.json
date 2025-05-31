@@ -1,6 +1,6 @@
 {
-  "commit": "5fd3e8695400febd5803de7e51a94007a6b620f9",
-  "generated": "2025-05-31T04:44:06.109Z",
+  "commit": "79fb5cb8be5c2dc924b9c6c46258d94e0727712e",
+  "generated": "2025-05-31T06:27:47.260Z",
   "metadata": [
     {
       "__outstatic": {
@@ -52,6 +52,23 @@
       "status": "published",
       "thumbnail": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba",
       "title": "Example works"
+    },
+    {
+      "__outstatic": {
+        "commit": "79fb5cb8be5c2dc924b9c6c46258d94e0727712e",
+        "hash": "3477778049",
+        "path": "outstatic/content/hero/hello-there.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5",
+      "collection": "hero",
+      "publishedAt": "2025-05-31T07:08:37.153Z",
+      "slug": "hello-there",
+      "status": "published",
+      "title": "Hello there  👋"
     }
   ]
 }
