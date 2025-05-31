@@ -2,7 +2,11 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { InlineTOC } from "fumadocs-ui/components/inline-toc"
 import defaultMdxComponents from "fumadocs-ui/mdx"
+import { Button } from "@/components/ui/button"
 import { works } from "@/lib/source"
+import { Card } from "@/components/ui/card"
+import { ArrowLeft } from "lucide-react"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default async function Page(props: {
   params: Promise<{ slug: string }>
@@ -15,29 +19,29 @@ export default async function Page(props: {
 
   return (
     <>
-      <div className="container rounded-xl border py-12 md:px-8">
-        <h1 className="mb-2 text-3xl font-bold">{page.data.title}</h1>
-        <p className="mb-4 text-fd-muted-foreground">{page.data.description}</p>
-        <Link href="/works">Back</Link>
-      </div>
+      <Card className="py-12 md:px-8 space-y-1 gap-0">
+        <h1 className="text-xl md:text-3xl font-bold">{page.data.title}</h1>
+        <p className="mb-4 text-muted-foreground">{page.data.description}</p>
+        <div className="flex items-center gap-3">
+          <Avatar className="size-6">
+            <AvatarImage src={page.data.author.picture} />
+            <AvatarFallback>{page.data.author.name[0]}</AvatarFallback>
+          </Avatar>
+          <p>{page.data.author.name}</p>
+        </div>
+      </Card>
       <article className="container flex flex-col px-4 py-8">
         <div className="prose min-w-0">
-          <InlineTOC items={page.data.toc} />
           <Mdx components={defaultMdxComponents} />
         </div>
-        <div className="flex flex-col gap-4 text-sm">
-          <div>
-            <p className="mb-1 text-fd-muted-foreground">Written by</p>
-            <p className="font-medium">{page.data.author.name}</p>
-          </div>
-          <div>
-            <p className="mb-1 text-sm text-fd-muted-foreground">At</p>
-            <p className="font-medium">
-              {new Date(page.data.publishedAt).toDateString()}
-            </p>
-          </div>
-        </div>
       </article>
+
+      <Button asChild variant={"ghost"} className="w-fit">
+        <Link href="/works">
+          <ArrowLeft className="size-5" />
+          Work list
+        </Link>
+      </Button>
     </>
   )
 }
@@ -59,5 +63,16 @@ export async function generateMetadata(props: {
   return {
     title: page.data.title,
     description: page.data.description,
+    openGraph: {
+      title: page.data.title,
+      description: page.data.description,
+      url: `/works/${params.slug}`, // Update with your domain
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.data.title,
+      description: page.data.description,
+    },
   }
 }
