@@ -16,6 +16,13 @@
       "fieldType": "Text",
       "dataType": "string",
       "title": "description"
+    },
+    "thumbnail": {
+      "description": "Work's Thumbnail",
+      "required": true,
+      "fieldType": "Image",
+      "dataType": "image",
+      "title": "thumbnail"
     }
   }
 }
