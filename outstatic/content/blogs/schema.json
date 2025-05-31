@@ -27,6 +27,10 @@
         {
           "value": "uxDesign",
           "label": "UX Design"
+        },
+        {
+          "value": "uiDesign",
+          "label": "UI Design"
         }
       ]
     }

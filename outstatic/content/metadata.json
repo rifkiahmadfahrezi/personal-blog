@@ -1,6 +1,6 @@
 {
-  "commit": "884a4d06fbe341689e8f367b144aae6e5a3b6047",
-  "generated": "2025-05-31T06:46:53.541Z",
+  "commit": "3ce567f0466c8cc5a0706e2b27c135fe6f6f954f",
+  "generated": "2025-05-31T06:48:03.781Z",
   "metadata": [
     {
       "__outstatic": {
@@ -41,6 +41,29 @@
       "slug": "5-ux-principles-every-designer-should-know",
       "status": "published",
       "title": "5 UX Principles Every Designer Should Know"
+    },
+    {
+      "__outstatic": {
+        "commit": "3ce567f0466c8cc5a0706e2b27c135fe6f6f954f",
+        "hash": "2137198249",
+        "path": "content/blogs/how-to-create-a-design-system-from-scratch.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "UI Design",
+          "value": "uiDesign"
+        }
+      ],
+      "collection": "blogs",
+      "description": "A step-by-step guide to building a scalable and consistent design system for your product — including colors, typography, components, and documentation.",
+      "publishedAt": "2025-05-31T07:29:17.601Z",
+      "slug": "how-to-create-a-design-system-from-scratch",
+      "status": "published",
+      "title": "How to Create a Design System from Scratch"
     }
   ]
 }
