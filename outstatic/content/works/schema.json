@@ -8,7 +8,12 @@
       "fieldType": "Tags",
       "dataType": "array",
       "title": "category",
-      "values": []
+      "values": [
+        {
+          "value": "uiUx",
+          "label": "UI/UX"
+        }
+      ]
     },
     "description": {
       "description": "Work's description",
