@@ -12,7 +12,7 @@
     },
     "description": {
       "description": "Work's description",
-      "required": false,
+      "required": true,
       "fieldType": "Text",
       "dataType": "string",
       "title": "description"
