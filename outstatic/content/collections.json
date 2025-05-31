@@ -4,5 +4,11 @@
     "slug": "blogs",
     "path": "content/blogs",
     "children": []
+  },
+  {
+    "title": "Works",
+    "slug": "works",
+    "path": "content/works",
+    "children": []
   }
 ]
