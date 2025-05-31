@@ -1,6 +1,6 @@
 {
-  "commit": "9904332c5db2bc4d81b1750481f583237086e14e",
-  "generated": "2025-05-31T11:34:00.605Z",
+  "commit": "04534e548e89d22a8ee753b123aa73e8788d42a1",
+  "generated": "2025-05-31T11:35:08.242Z",
   "metadata": [
     {
       "__outstatic": {
@@ -111,6 +111,30 @@
       "status": "published",
       "thumbnail": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "title": "Travelly – Travel Booking App"
+    },
+    {
+      "__outstatic": {
+        "commit": "04534e548e89d22a8ee753b123aa73e8788d42a1",
+        "hash": "996570817",
+        "path": "content/works/shopease-e-commerce-web-redesign.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "UI/UX",
+          "value": "uiUx"
+        }
+      ],
+      "collection": "works",
+      "description": "Redesigned the user experience for a fashion e-commerce site to boost conversion rates. Conducted user research and usability testing to streamline the product discovery and checkout processes. The result was a cleaner interface and a 25% increase in user engagement.",
+      "publishedAt": "2025-05-31T12:16:22.695Z",
+      "slug": "shopease-e-commerce-web-redesign",
+      "status": "published",
+      "thumbnail": "https://images.unsplash.com/photo-1688561808434-886a6dd97b8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "ShopEase – E-commerce Web Redesign"
     }
   ]
 }
