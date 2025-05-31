@@ -12,6 +12,10 @@
         {
           "value": "uiUx",
           "label": "UI/UX"
+        },
+        {
+          "value": "productDesign",
+          "label": "Product design"
         }
       ]
     },
