@@ -23,6 +23,10 @@
         {
           "value": "tips",
           "label": "tips"
+        },
+        {
+          "value": "uxDesign",
+          "label": "UX Design"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
-  "commit": "a44348501b13c8af54da53da274defbd38554fcb",
-  "generated": "2025-05-31T06:45:36.414Z",
+  "commit": "884a4d06fbe341689e8f367b144aae6e5a3b6047",
+  "generated": "2025-05-31T06:46:53.541Z",
   "metadata": [
     {
       "__outstatic": {
@@ -18,6 +18,29 @@
       "slug": "hello-there",
       "status": "published",
       "title": "Hello there  👋"
+    },
+    {
+      "__outstatic": {
+        "commit": "884a4d06fbe341689e8f367b144aae6e5a3b6047",
+        "hash": "282074046",
+        "path": "content/blogs/5-ux-principles-every-designer-should-know.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "UX Design",
+          "value": "uxDesign"
+        }
+      ],
+      "collection": "blogs",
+      "description": "Learn the foundational UX principles that help you design intuitive, user-friendly digital products — from user-centered design to accessibility.",
+      "publishedAt": "2025-05-31T07:27:41.310Z",
+      "slug": "5-ux-principles-every-designer-should-know",
+      "status": "published",
+      "title": "5 UX Principles Every Designer Should Know"
     }
   ]
 }
