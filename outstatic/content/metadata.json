@@ -1,6 +1,6 @@
 {
-  "commit": "ef4a5faadddb576854df877d207c6ee1b682ae72",
-  "generated": "2025-05-31T11:40:24.140Z",
+  "commit": "1f4b79d4b9791e994590f7ed6ac40e1dddc98a35",
+  "generated": "2025-05-31T21:33:57.422Z",
   "metadata": [
     {
       "__outstatic": {
@@ -115,30 +115,6 @@
     },
     {
       "__outstatic": {
-        "commit": "71df9934d781b957551bdd1dca4ec95b36de7d93",
-        "hash": "2704056080",
-        "path": "content/works/fintrack-personal-finance-dashboard.mdx"
-      },
-      "author": {
-        "name": "Rifki ahmad fahrezi",
-        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
-      },
-      "category": [
-        {
-          "label": "Product design",
-          "value": "productDesign"
-        }
-      ],
-      "collection": "works",
-      "description": "Created a responsive dashboard for a personal finance app that visualizes budgets, spending habits, and savings goals. Focused on data clarity and accessibility while maintaining a friendly, modern aesthetic. Integrated user feedback through multiple design iterations.",
-      "publishedAt": "2025-05-31T12:17:15.020Z",
-      "slug": "fintrack-personal-finance-dashboard",
-      "status": "published",
-      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Fintrack – Personal Finance Dashboard"
-    },
-    {
-      "__outstatic": {
         "commit": "ef4a5faadddb576854df877d207c6ee1b682ae72",
         "hash": "2929616164",
         "path": "content/blogs/my-go-to-tools-for-wireframing-and-prototyping.mdx"
@@ -159,6 +135,31 @@
       "slug": "my-go-to-tools-for-wireframing-and-prototyping",
       "status": "published",
       "title": "My Go-To Tools for Wireframing and Prototyping"
+    },
+    {
+      "__outstatic": {
+        "commit": "1f4b79d4b9791e994590f7ed6ac40e1dddc98a35",
+        "hash": "2309637876",
+        "path": "content/works/fintrack-personal-finance-dashboard.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "Product design",
+          "value": "productDesign"
+        }
+      ],
+      "collection": "works",
+      "demoUrl": "https://example.com/",
+      "description": "Created a responsive dashboard for a personal finance app that visualizes budgets, spending habits, and savings goals. Focused on data clarity and accessibility while maintaining a friendly, modern aesthetic. Integrated user feedback through multiple design iterations.",
+      "publishedAt": "2025-05-31T12:17:15.020Z",
+      "slug": "fintrack-personal-finance-dashboard",
+      "status": "published",
+      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Fintrack – Personal Finance Dashboard"
     }
   ]
 }
