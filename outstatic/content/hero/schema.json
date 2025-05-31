@@ -1,6 +1,13 @@
 {
-  "title": "Hero",
-  "slug": "hero",
+  "title": "hero",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "avatar": {
+      "description": "Hero avatar, will display beside the text content",
+      "required": true,
+      "fieldType": "Image",
+      "dataType": "image",
+      "title": "Avatar"
+    }
+  }
 }
