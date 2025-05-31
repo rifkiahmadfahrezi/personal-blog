@@ -5,7 +5,9 @@ const BaseLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
-      <main className="min-h-svh mx-auto max-w-screen-lg px-3">{children}</main>
+      <main className="min-h-svh mx-auto max-w-screen-lg px-3 mb-20">
+        {children}
+      </main>
     </>
   )
 }

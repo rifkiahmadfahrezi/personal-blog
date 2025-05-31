@@ -1,6 +1,6 @@
+// import "../../fuma.css"
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import "fumadocs-ui/css/preset.css"
 import { InlineTOC } from "fumadocs-ui/components/inline-toc"
 import defaultMdxComponents from "fumadocs-ui/mdx"
 import { Button } from "@/components/ui/button"
@@ -20,7 +20,7 @@ export default async function Page(props: {
 
   return (
     <>
-      <Card className="py-12 md:px-8 space-y-1 gap-0">
+      <Card className="py-12 md:px-8 space-y-1 gap-0 mt-10">
         <h1 className="text-xl md:text-3xl font-bold">{page.data.title}</h1>
         <p className="mb-4 text-muted-foreground">{page.data.description}</p>
         <div className="flex items-center gap-3">

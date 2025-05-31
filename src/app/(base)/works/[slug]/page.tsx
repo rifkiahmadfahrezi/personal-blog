@@ -1,10 +1,10 @@
+// import "../../fuma.css"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { InlineTOC } from "fumadocs-ui/components/inline-toc"
 import defaultMdxComponents from "fumadocs-ui/mdx"
 import { Button } from "@/components/ui/button"
 import { works } from "@/lib/source"
-import { Card } from "@/components/ui/card"
 import { ArrowLeft } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from "next/image"
@@ -20,7 +20,7 @@ export default async function Page(props: {
 
   return (
     <>
-      <div className="p-3 space-y-1">
+      <div className="p-3 space-y-1 mt-10">
         <figure className="aspect-video rounded overflow-hidden mb-3">
           <Image
             className="w-full"
