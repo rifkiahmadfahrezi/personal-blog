@@ -1,6 +1,6 @@
 {
-  "commit": "cceae93249e75db011f5550b7b74f0db286e50ff",
-  "generated": "2025-05-31T11:32:14.210Z",
+  "commit": "9904332c5db2bc4d81b1750481f583237086e14e",
+  "generated": "2025-05-31T11:34:00.605Z",
   "metadata": [
     {
       "__outstatic": {
@@ -87,6 +87,30 @@
       "slug": "my-go-to-tools-for-wireframing-and-prototyping",
       "status": "published",
       "title": "My Go-To Tools for Wireframing and Prototyping"
+    },
+    {
+      "__outstatic": {
+        "commit": "9904332c5db2bc4d81b1750481f583237086e14e",
+        "hash": "395489131",
+        "path": "content/works/travelly-travel-booking-app.mdx"
+      },
+      "author": {
+        "name": "Rifki ahmad fahrezi",
+        "picture": "https://avatars.githubusercontent.com/u/56358927?v=4"
+      },
+      "category": [
+        {
+          "label": "UI/UX",
+          "value": "uiUx"
+        }
+      ],
+      "collection": "works",
+      "description": "Designed a sleek, mobile-first travel booking app that allows users to search, compare, and book flights and hotels with ease. Focused on minimizing user friction and enhancing visual appeal through intuitive navigation, smart filters, and a personalized dashboard.",
+      "publishedAt": "2025-05-31T12:14:24.100Z",
+      "slug": "travelly-travel-booking-app",
+      "status": "published",
+      "thumbnail": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Travelly – Travel Booking App"
     }
   ]
 }
